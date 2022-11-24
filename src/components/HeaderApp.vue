@@ -21,7 +21,9 @@ export default {
             <div class="social">
                 <ul>
                     <li v-for="(icon, index) in social" :key="index">
-                        <a :href="icon.path"> {{}} </a>
+                        <a :href="icon.path" target="_blank" rel="noopener noreferrer">
+                            <p v-html="icon.img"></p>
+                        </a>
                     </li>
                 </ul>
             </div>
