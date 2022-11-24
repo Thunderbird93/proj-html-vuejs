@@ -1,0 +1,23 @@
+@use './partials/variables' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0!important;
+}
+
+
+.container{
+    width: calc(100% / 27 * 17);
+    margin: 0 auto;
+    padding: 0;
+    //debug
+    height: 100%;
+    min-height: 25px;
+    border: 1px dotted red;
+}
