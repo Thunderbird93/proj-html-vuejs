@@ -1,8 +1,8 @@
 <script>
-import HeaderApp from './components/HeaderApp.vue'
-import MainApp from './components/MainApp.vue'
-import FooterApp from './components/FooterApp.vue'
-import isocial from './data/social'
+import HeaderApp from './components/HeaderApp.vue';
+import MainApp from './components/MainApp.vue';
+import FooterApp from './components/FooterApp.vue';
+import icons from './data/social';
 
 export default {
   name: 'App',
@@ -13,14 +13,14 @@ export default {
   },
   data(){
     return{
-      isocial,
+      icons,
     }
   }
 }
 </script>
 
 <template>
-  <HeaderApp :social="isocial" />
+  <HeaderApp :social="icons"/>
   <MainApp />
   <FooterApp />
 </template>

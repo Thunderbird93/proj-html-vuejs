@@ -1,6 +1,13 @@
 <script>
 export default {
-    name: 'HeaderApp'
+    name: 'HeaderApp',
+    props:{
+        social: Array
+    },
+    data(){
+        return{
+        }
+    }
 }
 </script>
 
@@ -12,10 +19,11 @@ export default {
                 <i class="fa-solid fa-phone-flip"></i>
                 <span>Call us for a Free Quote: (numero verde)</span></div>
             <div class="social">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
+                <ul>
+                    <li v-for="(icon, index) in social" :key="index">
+                        <a :href="icon.path"> {{}} </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
