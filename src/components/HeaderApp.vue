@@ -17,7 +17,7 @@ export default {
         <div class="container">
             <div class="cta">
                 <i class="fa-solid fa-phone-flip"></i>
-                <span>Call us for a Free Quote: (numero verde)</span></div>
+                <span>Call us for a Free Quote: 1.800.555.6789</span></div>
             <div class="social">
                 <ul>
                     <li v-for="(icon, index) in social" :key="index">
