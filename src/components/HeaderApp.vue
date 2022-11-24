@@ -40,7 +40,7 @@ export default {
 .header-top{
     background-color: $cc-lima;
     height: 50px;
-    .container{
+    .ac-container{
         color: $cc-white;
         display: flex;
         justify-content: space-between;
