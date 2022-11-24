@@ -8,8 +8,15 @@ export default {
   <header>
     <div class="header-top">
         <div class="container">
-            <div class="cta">Call us for a Free Quote: (numero verde)</div>
-            <div class="social">le 4 icone social</div>
+            <div class="cta">
+                <i class="fa-solid fa-phone-flip"></i>
+                <span>Call us for a Free Quote: (numero verde)</span></div>
+            <div class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
         </div>
     </div>
   </header>
