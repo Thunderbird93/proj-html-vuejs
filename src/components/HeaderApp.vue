@@ -14,7 +14,7 @@ export default {
 <template>
   <header>
     <div class="header-top">
-        <div class="container">
+        <div class="ac-container">
             <div class="cta">
                 <i class="fa-solid fa-phone-flip"></i>
                 <span>Call us for a Free Quote: 1.800.555.6789</span></div>
