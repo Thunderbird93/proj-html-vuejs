@@ -8,7 +8,8 @@ export default {
   <header>
     <div class="header-top">
         <div class="container">
-
+            <div class="cta">Call us for a Free Quote: (numero verde)</div>
+            <div class="social">le 4 icone social</div>
         </div>
     </div>
   </header>
@@ -22,6 +23,12 @@ export default {
 .header-top{
     background-color: $cc-lima;
     height: 50px;
+    .container{
+        color: $cc-white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 </style>
