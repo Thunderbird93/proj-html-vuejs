@@ -2,6 +2,7 @@
 import HeaderApp from './components/HeaderApp.vue'
 import MainApp from './components/MainApp.vue'
 import FooterApp from './components/FooterApp.vue'
+import isocial from './data/social'
 
 export default {
   name: 'App',
@@ -9,12 +10,17 @@ export default {
     HeaderApp,
     MainApp,
     FooterApp
+  },
+  data(){
+    return{
+      isocial,
+    }
   }
 }
 </script>
 
 <template>
-  <HeaderApp />
+  <HeaderApp :social="isocial" />
   <MainApp />
   <FooterApp />
 </template>
