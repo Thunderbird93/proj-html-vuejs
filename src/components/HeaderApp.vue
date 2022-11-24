@@ -6,7 +6,11 @@ export default {
 
 <template>
   <header>
-    <div class="container"></div>
+    <div class="header-top">
+        <div class="container">
+
+        </div>
+    </div>
   </header>
 </template>
 
@@ -14,5 +18,10 @@ export default {
 @use '../style/general.scss';
 @use '../style/partials/mixin' as *;
 @use '../style/partials/variables' as *;
+
+.header-top{
+    background-color: $cc-lima;
+    height: 50px;
+}
 
 </style>
