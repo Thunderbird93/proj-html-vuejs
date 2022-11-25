@@ -22,7 +22,7 @@ export default {
                 <ul>
                     <li v-for="(icon, index) in social" :key="index">
                         <a :href="icon.path" target="_blank" rel="noopener noreferrer">
-                            <p v-html="icon.img"></p>
+                            <span v-html="icon.img"></span>
                         </a>
                     </li>
                 </ul>
@@ -48,6 +48,8 @@ export default {
     } .social{
         ul{
             display: flex;
+            align-items: center;
+            margin: 0;
         }
     }
 }
