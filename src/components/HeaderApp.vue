@@ -49,6 +49,11 @@ export default {
                     </div>
                 </nav>
             </div>
+            <div class="j-bottom">
+                <h6>MOVING WITHOUT THE HASSLE</h6>
+                <h2>WE MAKE IT SIMPLE</h2>
+                <h6>PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</h6>
+            </div>
         </div>
     </div>
   </header>
