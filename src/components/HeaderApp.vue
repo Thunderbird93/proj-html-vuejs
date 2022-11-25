@@ -44,6 +44,9 @@ export default {
                             <a :href="pagina.path">{{pagina.nome}}</a>
                         </li>
                     </ul>
+                    <div class="cta-btn">
+                        
+                    </div>
                 </nav>
             </div>
         </div>
