@@ -45,7 +45,7 @@ export default {
                         </li>
                     </ul>
                     <div class="cta-btn">
-                        
+
                     </div>
                 </nav>
             </div>
@@ -76,6 +76,9 @@ export default {
     }
 }
 .ac-jumbotron{
+    background-image: url(../assets/img/avada-movers-homeherobackground-final.jpg);
+    background-size: cover;
+    height: 500px;
     .j-top{
         display: flex;
         justify-content: space-between;
