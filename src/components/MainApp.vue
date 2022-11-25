@@ -5,7 +5,14 @@ export default {
 </script>
 
 <template>
-  <div class="container"></div>
+    <main>
+      <div class="cta">
+        <span>
+          <i class="fa-regular fa-paper-plane"></i>
+          <h5>GET A FREE QUOTE ONLINE NOW!</h5>
+        </span>
+      </div>
+    </main>
 </template>
 
 <style lang="scss" scoped>
@@ -13,4 +20,6 @@ export default {
 @use '../style/partials/mixin' as *;
 @use '../style/partials/variables' as *;
 
+
 </style>
+
