@@ -3,6 +3,7 @@ import HeaderApp from './components/HeaderApp.vue';
 import MainApp from './components/MainApp.vue';
 import FooterApp from './components/FooterApp.vue';
 import icons from './data/social';
+import pagine from './data/manu';
 
 export default {
   name: 'App',
@@ -14,13 +15,14 @@ export default {
   data(){
     return{
       icons,
+      pagine,
     }
   }
 }
 </script>
 
 <template>
-  <HeaderApp :social="icons"/>
+  <HeaderApp :menu="pagine" :social="icons"/>
   <MainApp />
   <FooterApp />
 </template>
