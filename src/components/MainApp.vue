@@ -32,7 +32,7 @@ export default {
         <div class="tre-carte d-flex">
           <!-- 1ª carta -->
           <div class="ac-container">
-            <div class="card" style="width: 18rem;">
+            <div class="card">
               <img class="card-img-top" src="../assets/img/avada-movers-serviceonephoto-final.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -43,7 +43,7 @@ export default {
           </div>
           <!-- 2ª carta -->
           <div class="ac-container">
-            <div class="card" style="width: 18rem;">
+            <div class="card">
               <img class="card-img-top" src="../assets/img/avada-movers-servicethreephoto-final.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -54,7 +54,7 @@ export default {
           </div>
           <!-- 3ª carta -->
           <div class="ac-container">
-            <div class="card" style="width: 18rem;">
+            <div class="card">
               <img class="card-img-top" src="../assets/img/avada-movers-servicethreephoto-final.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
