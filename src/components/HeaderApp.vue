@@ -29,8 +29,23 @@ export default {
             </div>
         </div>
     </div>
-    <div class="jumbotron">
-        
+    <div class="ac-jumbotron">
+        <div class="ac-container">
+            <div class="j-top">
+                <div class="logo">
+                    <a href="#">
+                        <img src="../assets/img/avada-movers-logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
   </header>
 </template>
@@ -53,6 +68,17 @@ export default {
             display: flex;
             align-items: center;
             margin: 0;
+        }
+    }
+}
+.ac-jumbotron{
+    .j-top{
+        display: flex;
+        justify-content: space-between;
+        li{
+            a{
+                color: black;
+            }
         }
     }
 }
