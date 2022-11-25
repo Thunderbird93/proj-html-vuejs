@@ -29,6 +29,9 @@ export default {
             </div>
         </div>
     </div>
+    <div class="jumbotron">
+        
+    </div>
   </header>
 </template>
 

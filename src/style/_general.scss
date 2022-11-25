@@ -3,6 +3,7 @@
 @import 'node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 @import 'node_modules/bootstrap/scss/bootstrap';
 
+
 * {
     margin: 0;
     padding: 0;
@@ -17,10 +18,9 @@
     margin: 0 auto;
     padding: 0;
     height: 100%;
-    /*debug
+    //debug
     min-height: 25px;
     border: 1px dotted red;
-    */
 }
 
 li {
