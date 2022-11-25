@@ -76,9 +76,12 @@ export default {
     .j-top{
         display: flex;
         justify-content: space-between;
-        li{
-            a{
-                color: black;
+        ul{
+            display: flex;
+            li{
+                a{
+                    color: black;
+                }
             }
         }
     }
