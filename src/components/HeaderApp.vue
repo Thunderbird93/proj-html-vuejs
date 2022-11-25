@@ -2,7 +2,8 @@
 export default {
     name: 'HeaderApp',
     props:{
-        social: Array
+        social: Array,
+        menu: Array
     },
     data(){
         return{
@@ -39,8 +40,8 @@ export default {
                 </div>
                 <nav>
                     <ul>
-                        <li>
-                            <a href="#">Home</a>
+                        <li v-for="(pagina, index) in menu" :key="index">
+                            <a :href="pagina.path">{{pagina.nome}}</a>
                         </li>
                     </ul>
                 </nav>
