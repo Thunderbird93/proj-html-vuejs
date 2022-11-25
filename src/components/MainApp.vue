@@ -20,6 +20,17 @@ export default {
 @use '../style/partials/mixin' as *;
 @use '../style/partials/variables' as *;
 
+main{
+  .cta{
+    background-color: $md-denim;
+    //debug
+    height: 100px;
+    span{
+      display: flex;
+    }
+  }
+}
+
 
 </style>
 
