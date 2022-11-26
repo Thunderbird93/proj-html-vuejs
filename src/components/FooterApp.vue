@@ -1,6 +1,10 @@
 <script>
 export default {
-    name: 'FooterApp'
+    name: 'FooterApp',
+    data(){
+      return{
+      }
+    }
 }
 </script>
 
