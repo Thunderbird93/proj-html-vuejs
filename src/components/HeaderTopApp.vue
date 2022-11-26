@@ -10,6 +10,7 @@ export default {
     data(){
         return{
             icons,
+            assistenza: '1.800.555.6789',
         }
     }
 }
@@ -20,7 +21,9 @@ export default {
         <div class="ac-container">
             <div class="cta">
                 <i class="fa-solid fa-phone-flip"></i>
-                <span>Call us for a Free Quote: 1.800.555.6789</span>
+                <span>
+                    Call us for a Free Quote: <a href="tel:+{{assistenza}}">{{assistenza}}</a>
+                </span>
             </div>
             <SocialApp :social="icons" /> <!-- Componente -->
         </div>
