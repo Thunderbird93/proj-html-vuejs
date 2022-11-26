@@ -27,9 +27,9 @@ export default {
                     </li>
                 </ul>
             </div>
+            <SocialApp />
         </div>
     </div>
-    <SocialApp />
 </template>
 
 <style lang="scss" scoped>
