@@ -2,7 +2,6 @@
 import HeaderApp from './components/HeaderApp.vue';
 import MainApp from './components/MainApp.vue';
 import FooterApp from './components/FooterApp.vue';
-import pagine from './data/manu';
 
 export default {
   name: 'App',
@@ -13,14 +12,13 @@ export default {
   },
   data(){
     return{
-      pagine,
     }
   }
 }
 </script>
 
 <template>
-  <HeaderApp :menu="pagine" />
+  <HeaderApp />
   <MainApp />
   <FooterApp />
 </template>
