@@ -44,7 +44,7 @@ export default {
           <!-- 2ª carta -->
           <div class="ac-container">
             <div class="card">
-              <img class="card-img-top" src="../assets/img/avada-movers-servicethreephoto-final.jpg" alt="Card image cap">
+              <img class="card-img-top" src="../assets/img/avada-movers-servicetwophoto-final.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -66,6 +66,20 @@ export default {
         </div>
       </div>  
       <!-- /3-Cards -->
+      <!-- Move with Ease -->
+      <div class="ease">
+        <div class="ac-container">
+          <div class="cta-card">
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 </template>
 
@@ -85,6 +99,12 @@ main{
   }
   .main-jumbotorn{
     background-color: $mc-mercury;
+  }
+  .ease{
+    height: 400px;
+    background-image: url(../assets/img/avada-movers-servicetwophoto-final.jpg);
+    background-size: cover;
+    background-position: center;
   }
 }
 
