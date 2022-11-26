@@ -1,8 +1,13 @@
 <script>
+import SocialApp from './SocialApp.vue'
+
 export default {
     name: 'HeaderTopApp',
     props:{
         social: Object,
+    },
+    components:{
+        SocialApp
     }
 }
 </script>
@@ -24,6 +29,7 @@ export default {
             </div>
         </div>
     </div>
+    <SocialApp />
 </template>
 
 <style lang="scss" scoped>
