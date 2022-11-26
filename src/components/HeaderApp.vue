@@ -1,5 +1,5 @@
 <script>
-import HeaderTopApp from './HeadetTopApp.vue'
+import HeaderTopApp from './HeaderTopApp.vue'
 import icons from '../data/social'
 
 export default {
