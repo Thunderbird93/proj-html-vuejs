@@ -2,8 +2,8 @@
 export default {
     name: 'HeaderApp',
     props:{
-        social: Array,
-        menu: Array
+        social: Object,
+        menu: Object
     },
     data(){
         return{
@@ -14,6 +14,7 @@ export default {
 
 <template>
   <header>
+    <!--Header Top-->
     <div class="header-top">
         <div class="ac-container">
             <div class="cta">
@@ -30,8 +31,12 @@ export default {
             </div>
         </div>
     </div>
+    <!--/Header Top-->
+
+    <!-- Jumbotron -->
     <div class="ac-jumbotron">
         <div class="ac-container">
+            <!-- Top Jumbotron -->
             <div class="j-top">
                 <div class="logo">
                     <a href="#">
@@ -49,13 +54,18 @@ export default {
                     </div>
                 </nav>
             </div>
+            <!-- /Top Jumbotron -->
+            
+            <!-- Bottom Jumbotron -->
             <div class="j-bottom">
                 <h6>MOVING WITHOUT THE HASSLE</h6>
                 <h2>WE MAKE IT SIMPLE</h2>
                 <h6>PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</h6>
             </div>
+            <!-- /Bottom Jumbotron -->
         </div>
     </div>
+    <!-- /Jumbotron -->
   </header>
 </template>
 
