@@ -1,12 +1,18 @@
 <script>
+import HeaderTopApp from './HeadetTopApp.vue'
+import icons from '../data/social'
+
 export default {
     name: 'HeaderApp',
     props:{
-        social: Object,
         menu: Object
+    },
+    components:{
+        HeaderTopApp,
     },
     data(){
         return{
+            icons
         }
     }
 }
@@ -15,22 +21,7 @@ export default {
 <template>
   <header>
     <!--Header Top-->
-    <div class="header-top">
-        <div class="ac-container">
-            <div class="cta">
-                <i class="fa-solid fa-phone-flip"></i>
-                <span>Call us for a Free Quote: 1.800.555.6789</span></div>
-            <div class="social">
-                <ul>
-                    <li v-for="(icon, index) in social" :key="index">
-                        <a :href="icon.path" target="_blank" rel="noopener noreferrer">
-                            <span v-html="icon.img"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <HeaderTopApp :social="icons"/>
     <!--/Header Top-->
 
     <!-- Jumbotron -->
@@ -55,7 +46,7 @@ export default {
                 </nav>
             </div>
             <!-- /Top Jumbotron -->
-            
+
             <!-- Bottom Jumbotron -->
             <div class="j-bottom">
                 <h6>MOVING WITHOUT THE HASSLE</h6>
@@ -74,22 +65,6 @@ export default {
 @use '../style/partials/mixin' as *;
 @use '../style/partials/variables' as *;
 
-.header-top{
-    background-color: $cc-lima;
-    height: 50px;
-    .ac-container{
-        color: $cc-white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    } .social{
-        ul{
-            display: flex;
-            align-items: center;
-            margin: 0;
-        }
-    }
-}
 .ac-jumbotron{
     background-image: url(../assets/img/avada-movers-homeherobackground-final.jpg);
     background-size: cover;
