@@ -2,7 +2,6 @@
 import HeaderApp from './components/HeaderApp.vue';
 import MainApp from './components/MainApp.vue';
 import FooterApp from './components/FooterApp.vue';
-import icons from './data/social';
 import pagine from './data/manu';
 
 export default {
@@ -14,7 +13,6 @@ export default {
   },
   data(){
     return{
-      icons,
       pagine,
     }
   }
@@ -22,7 +20,7 @@ export default {
 </script>
 
 <template>
-  <HeaderApp :menu="pagine" :social="icons"/>
+  <HeaderApp :menu="pagine" />
   <MainApp />
   <FooterApp />
 </template>
