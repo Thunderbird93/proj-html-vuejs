@@ -1,13 +1,16 @@
 <script>
 import SocialApp from './SocialApp.vue'
+import icons from '../data/social'
 
 export default {
     name: 'HeaderTopApp',
-    props:{
-        social: Object,
-    },
     components:{
-        SocialApp
+        SocialApp,
+    },
+    data(){
+        return{
+            icons,
+        }
     }
 }
 </script>
@@ -17,17 +20,9 @@ export default {
         <div class="ac-container">
             <div class="cta">
                 <i class="fa-solid fa-phone-flip"></i>
-                <span>Call us for a Free Quote: 1.800.555.6789</span></div>
-            <div class="social">
-                <ul>
-                    <li v-for="(icon, index) in social" :key="index">
-                        <a :href="icon.path" target="_blank" rel="noopener noreferrer">
-                            <span v-html="icon.img"></span>
-                        </a>
-                    </li>
-                </ul>
+                <span>Call us for a Free Quote: 1.800.555.6789</span>
             </div>
-            <SocialApp />
+            <SocialApp :social="icons" /> <!-- Componente -->
         </div>
     </div>
 </template>
@@ -44,12 +39,6 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    } .social{
-        ul{
-            display: flex;
-            align-items: center;
-            margin: 0;
-        }
     }
 }
 </style>

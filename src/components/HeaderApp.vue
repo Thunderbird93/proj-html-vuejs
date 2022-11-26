@@ -1,6 +1,5 @@
 <script>
 import HeaderTopApp from './HeaderTopApp.vue'
-import icons from '../data/social'
 
 export default {
     name: 'HeaderApp',
@@ -12,7 +11,6 @@ export default {
     },
     data(){
         return{
-            icons
         }
     }
 }
@@ -21,7 +19,7 @@ export default {
 <template>
   <header>
     <!--Header Top-->
-    <HeaderTopApp :social="icons"/>
+    <HeaderTopApp />
     <!--/Header Top-->
 
     <!-- Jumbotron -->
