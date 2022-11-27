@@ -1,10 +1,12 @@
 <script>
 import FooterTop from './FooterTop.vue'
+import FooterBottom from './FooterBottom.vue'
 
 export default {
     name: 'FooterApp',
     components:{
-      FooterTop
+      FooterTop,
+      FooterBottom
     },
     data(){
       return{
@@ -16,11 +18,7 @@ export default {
 <template>
   <footer>
     <FooterTop />
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-      <div class="ac-container"></div>
-    </div>
-    <!-- /Footer Bottom -->
+    <FooterBottom />
   </footer>
 </template>
 
@@ -30,17 +28,6 @@ export default {
 @use '../style/partials/variables' as *;
 
 footer{
-  .mid-line{
-    height: 20px;
-    background-color: $cc-lima;
-  }
-  .footer-top{
-    height: 300px;
-  }
-  .footer-bottom{
-    height: 200px;
-    background-color: $cc-lima;
-  }
 }
 
 </style>
