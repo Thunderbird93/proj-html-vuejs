@@ -41,7 +41,7 @@ export default {
 @use '../style/partials/variables' as *;
 .header-top{
     background-color: $cc-lima;
-    height: 25px;
+    height: 30px;
     font-size: 10px;
     .ac-container{
         color: $cc-white;
