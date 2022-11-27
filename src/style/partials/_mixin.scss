@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 @mixin center {
     display: flex;
     justify-content: center;
@@ -6,4 +8,12 @@
 
 @mixin debug {
     border: 1px dotted red;
+}
+
+@mixin cta_btn {
+    min-width: 50px;
+    padding: 5px 15px;
+    background-color: $md-denim;
+    color: $cc-white;
+    border-radius: 15px;
 }
