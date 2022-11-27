@@ -1,7 +1,6 @@
 <script>
 import HeaderTopApp from './HeaderTopApp.vue'
 import JumbotronApp from './JumbotronApp.vue' 
-import pagine from '../data/menu'
 
 export default {
     name: 'HeaderApp',
@@ -11,7 +10,6 @@ export default {
     },
     data(){
         return{
-            pagine
         }
     }
 }
@@ -24,7 +22,7 @@ export default {
     <!--/Header Top-->
 
     <!-- Jumbotron -->
-    <JumbotronApp :menu="pagine" />
+    <JumbotronApp />
     <!-- /Jumbotron -->
   </header>
 </template>

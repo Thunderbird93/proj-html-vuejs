@@ -1,11 +1,17 @@
 <script>
+import MenuApp from './MenuApp.vue'
+import pagine from '../data/menu'
+
 export default {
     name: 'JumbotronApp',
     props:{
-        menu: Object
+    },
+    components:{
+        MenuApp
     },
     data(){
         return{
+            pagine
         }
     }
 }
@@ -24,9 +30,7 @@ export default {
                 </div>
                 <nav>
                     <ul>
-                        <li v-for="(pagina, index) in menu" :key="index">
-                            <a :href="pagina.path">{{pagina.nome}}</a>
-                        </li>
+                        <MenuApp :menu="pagine" />
                     </ul>
                     <div class="cta-btn">
 
@@ -60,11 +64,6 @@ export default {
         justify-content: space-between;
         ul{
             display: flex;
-            li{
-                a{
-                    color: black;
-                }
-            }
         }
     }
 }
