@@ -62,16 +62,17 @@ export default {
     background-size: cover;
     height: 396px;
     .j-top{
+        font-size: 9px;
         display: flex;
         justify-content: space-between;
         height: 50px;
         margin-top: 10px;
         .navbar{
             display: flex;
-            .j-bottom{
-                @include center;
-                @include debug;
-            }
+        }
+        .j-bottom{
+            @include center;
+            @include debug;
         }
         .logo{
             height: 100%;
@@ -84,8 +85,7 @@ export default {
         }
         ul{
             @include center;
-            font-weight: bolder;
-            margin: 5px;
+            font-weight: 900;
         }
     }
 }

@@ -19,7 +19,7 @@ export default {
 @use '../style/partials/variables' as *;
 
 li{
-  margin: 5px;
+  margin: 5px 15px;
      a{
         color: black;
         font-weight: bolder;
