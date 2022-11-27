@@ -19,10 +19,15 @@ export default {
 @use '../style/partials/variables' as *;
 .cta{
     background-color: $md-denim;
+    @include center;
     //debug
     height: 100px;
     span{
       display: flex;
+      color: $cc-white;
+      h5{
+        margin-left: 5px;
+      }
     }
   }
 </style>

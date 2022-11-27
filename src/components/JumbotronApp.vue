@@ -41,9 +41,11 @@ export default {
 
             <!-- Bottom Jumbotron -->
             <div class="j-bottom">
+              <div>
                 <h6>MOVING WITHOUT THE HASSLE</h6>
-                <h2>WE MAKE IT SIMPLE</h2>
+                <h2>WE MAKE T SIMPLE</h2>
                 <h6>PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</h6>
+              </div>
             </div>
             <!-- /Bottom Jumbotron -->
         </div>
@@ -65,6 +67,10 @@ export default {
         ul{
             display: flex;
         }
+    }
+    .j-bottom{
+        @include center;
+        @include debug;
     }
 }
 
