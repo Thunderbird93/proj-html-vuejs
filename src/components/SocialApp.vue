@@ -35,6 +35,8 @@ export default {
             display: flex;
             align-items: center;
             margin: 0;
+        } li {
+            margin: 0 5px;
         }
     }
 </style>
