@@ -1,13 +1,26 @@
 
 <script>
+import SocialApp from './SocialApp.vue'
+import icons from '../data/social'
+
 export default {
     name: 'FooterBottom',
+    components:{
+      SocialApp,
+    },
+    data(){
+      return{
+        icons,
+      }
+    }
 }
 </script>
 
 <template>
     <div class="footer-bottom">
-      <div class="ac-container"></div>
+      <div class="ac-container">
+        <SocialApp :social="icons"/>
+      </div>
     </div>
 </template>
 
