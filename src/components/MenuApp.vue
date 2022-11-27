@@ -19,8 +19,10 @@ export default {
 @use '../style/partials/variables' as *;
 
 li{
+  margin: 5px;
      a{
         color: black;
+        font-weight: bolder;
     }
 }
 </style>

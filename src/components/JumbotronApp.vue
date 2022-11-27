@@ -1,5 +1,6 @@
 <script>
 import MenuApp from './MenuApp.vue'
+import Cta_Btn from './Cta_Btn.vue'
 import pagine from '../data/menu'
 
 export default {
@@ -7,7 +8,8 @@ export default {
     props:{
     },
     components:{
-        MenuApp
+        MenuApp,
+        Cta_Btn
     },
     data(){
         return{
@@ -28,14 +30,12 @@ export default {
                         <img src="../assets/img/avada-movers-retinalogo.png" alt="logo">
                     </a>
                 </div>
-                <nav>
+                <navbar>
                     <ul>
                         <MenuApp :menu="pagine" />
+                        <Cta_Btn />
                     </ul>
-                    <div class="cta-btn">
-
-                    </div>
-                </nav>
+                </navbar>
             </div>
             <!-- /Top Jumbotron -->
 
@@ -66,6 +66,13 @@ export default {
         justify-content: space-between;
         height: 50px;
         margin-top: 10px;
+        .navbar{
+            display: flex;
+            .j-bottom{
+                @include center;
+                @include debug;
+            }
+        }
         .logo{
             height: 100%;
                 a{
@@ -76,12 +83,10 @@ export default {
                 }
         }
         ul{
-            display: flex;
+            @include center;
+            font-weight: bolder;
+            margin: 5px;
         }
-    }
-    .j-bottom{
-        @include center;
-        @include debug;
     }
 }
 
