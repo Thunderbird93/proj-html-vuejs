@@ -32,23 +32,6 @@ export default {
 @use '../style/partials/mixin' as *;
 @use '../style/partials/variables' as *;
 
-.ac-jumbotron{
-    background-image: url(../assets/img/avada-movers-homeherobackground-final.jpg);
-    background-size: cover;
-    height: 500px;
-    .j-top{
-        display: flex;
-        justify-content: space-between;
-        ul{
-            display: flex;
-            li{
-                a{
-                    color: black;
-                }
-            }
-        }
-    }
-}
 
 </style>
 

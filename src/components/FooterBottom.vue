@@ -29,7 +29,7 @@ export default {
 @use '../style/partials/mixin' as *;
 @use '../style/partials/variables' as *;
 .footer-bottom{
-    height: 200px;
+    height: 72px;
     background-color: $cc-lima;
   }
 </style>

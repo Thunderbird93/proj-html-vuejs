@@ -25,7 +25,7 @@ export default {
             <div class="j-top">
                 <div class="logo">
                     <a href="#">
-                        <img src="../assets/img/avada-movers-logo.png" alt="logo">
+                        <img src="../assets/img/avada-movers-retinalogo.png" alt="logo">
                     </a>
                 </div>
                 <nav>
@@ -60,10 +60,21 @@ export default {
 .ac-jumbotron{
     background-image: url(../assets/img/avada-movers-homeherobackground-final.jpg);
     background-size: cover;
-    height: 500px;
+    height: 396px;
     .j-top{
         display: flex;
         justify-content: space-between;
+        height: 50px;
+        margin-top: 10px;
+        .logo{
+            height: 100%;
+                a{
+                    height: 100%;
+                    img{
+                        height: 35px;
+                    }
+                }
+        }
         ul{
             display: flex;
         }

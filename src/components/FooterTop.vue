@@ -16,10 +16,10 @@ export default {
 @use '../style/partials/mixin' as *;
 @use '../style/partials/variables' as *;
   .mid-line{
-    height: 20px;
+    height: 8px;
     background-color: $cc-lima;
   }
   .footer-top{
-    height: 300px;
+    height: 225px;
   }
 </style>

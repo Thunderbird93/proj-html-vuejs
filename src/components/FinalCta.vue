@@ -21,7 +21,7 @@ export default {
 main{
   .final-cta{
     background-image: url(../assets/img/avada-movers-request-quote-background.jpg);
-    height: 300px;
+    height: 268px;
   }
 }
 </style>

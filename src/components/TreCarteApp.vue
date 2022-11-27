@@ -49,4 +49,8 @@ export default {
 @use '../style/partials/mixin' as *;
 @use '../style/partials/variables' as *;
 
+.ac-container{
+  height: 548px;
+}
+
 </style>

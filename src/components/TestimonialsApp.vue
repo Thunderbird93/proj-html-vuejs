@@ -68,4 +68,10 @@ export default {
 @use '../style/partials/mixin' as *;
 @use '../style/partials/variables' as *;
 
+.testimonials{
+  background-image: url(../assets/img/avada-movers-testimonial-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 </style>

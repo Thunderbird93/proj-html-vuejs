@@ -21,7 +21,7 @@ export default {
     background-color: $md-denim;
     @include center;
     //debug
-    height: 100px;
+    height: 71px;
     span{
       display: flex;
       color: $cc-white;

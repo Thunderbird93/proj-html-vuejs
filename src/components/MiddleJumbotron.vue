@@ -27,5 +27,6 @@ export default {
 @use '../style/partials/variables' as *;
     .main-jumbotorn{
     background-color: $mc-mercury;
+    height: 335px;
   }
 </style>
