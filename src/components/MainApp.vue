@@ -2,13 +2,15 @@
 import CtaApp from './CtaApp.vue'
 import MiddleJumbotron from './MiddleJumbotron.vue'
 import TreCarteApp from './TreCarteApp.vue'
+import MoveEase from './MoveEase.vue'
 
 export default {
     name: 'MainApp',
     components:{
       CtaApp,
       MiddleJumbotron,
-      TreCarteApp
+      TreCarteApp,
+      MoveEase
     }
 }
 </script>
@@ -17,24 +19,8 @@ export default {
     <main>
       <CtaApp />
       <MiddleJumbotron />
-      <!-- 3-Cards -->
       <TreCarteApp /> 
-      <!-- /3-Cards -->
-      <!-- Move with Ease -->
-      <div class="ease">
-        <div class="ac-container">
-          <div class="cta-card">
-            <div class="card text-center" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /Move with Ease -->
+      <MoveEase />
       <!-- Testimonials -->
       <div class="testimonials">
         <div class="ac-container">
@@ -109,12 +95,6 @@ export default {
 @use '../style/partials/variables' as *;
 
 main{
-  .ease{
-    height: 400px;
-    background-image: url(../assets/img/avada-movers-servicetwophoto-final.jpg);
-    background-size: cover;
-    background-position: center;
-  }
   .final-cta{
     background-image: url(../assets/img/avada-movers-request-quote-background.jpg);
     height: 300px;
