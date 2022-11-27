@@ -4,6 +4,7 @@ import MiddleJumbotron from './MiddleJumbotron.vue'
 import TreCarteApp from './TreCarteApp.vue'
 import MoveEase from './MoveEase.vue'
 import TestimonialsApp from './TestimonialsApp.vue'
+import FinalCta from './FinalCta.vue'
 
 export default {
     name: 'MainApp',
@@ -12,7 +13,8 @@ export default {
       MiddleJumbotron,
       TreCarteApp,
       MoveEase,
-      TestimonialsApp
+      TestimonialsApp,
+      FinalCta
     }
 }
 </script>
@@ -24,14 +26,7 @@ export default {
       <TreCarteApp /> 
       <MoveEase />
       <TestimonialsApp />
-      <!-- /Testimonials-->
-      <!-- final-CTA -->
-      <div class="final-cta">
-        <div class="ac-container">
-          
-        </div>
-        <!-- /final-CTA -->
-      </div>
+      <FinalCta />
     </main>
 </template>
 
@@ -41,11 +36,6 @@ export default {
 @use '../style/partials/variables' as *;
 
 main{
-  .final-cta{
-    background-image: url(../assets/img/avada-movers-request-quote-background.jpg);
-    height: 300px;
-  }
 }
-
 </style>
 
