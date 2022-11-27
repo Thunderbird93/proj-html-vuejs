@@ -1,18 +1,17 @@
 <script>
+import CtaApp from './CtaApp.vue'
+
 export default {
-    name: 'MainApp'
+    name: 'MainApp',
+    components:{
+      CtaApp
+    }
 }
 </script>
 
 <template>
     <main>
-      <!-- CTA -->
-      <div class="cta">
-        <span>
-          <i class="fa-regular fa-paper-plane"></i>
-          <h5>GET A FREE QUOTE ONLINE NOW!</h5>
-        </span>
-      </div>
+      <CtaApp />
       <!-- Jumbotron (Main) -->
       <div class="main-jumbotorn">
         <div class="ac-container">
@@ -140,11 +139,11 @@ export default {
       </div>
       <!-- /Testimonials-->
       <!-- final-CTA -->
-      <!-- /final-CTA -->
       <div class="final-cta">
         <div class="ac-container">
-
+          
         </div>
+        <!-- /final-CTA -->
       </div>
     </main>
 </template>
@@ -155,14 +154,6 @@ export default {
 @use '../style/partials/variables' as *;
 
 main{
-  .cta{
-    background-color: $md-denim;
-    //debug
-    height: 100px;
-    span{
-      display: flex;
-    }
-  }
   .main-jumbotorn{
     background-color: $mc-mercury;
   }
