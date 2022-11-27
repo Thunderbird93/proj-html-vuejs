@@ -1,35 +1,20 @@
 <script>
-import FooterTop from './FooterTop.vue'
-
 export default {
-    name: 'FooterApp',
-    components:{
-      FooterTop
-    },
-    data(){
-      return{
-      }
-    }
+    name: 'FooterTop',
 }
 </script>
 
 <template>
-  <footer>
-    <FooterTop />
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
+    <div class="mid-line"></div>
+    <div class="footer-top">
       <div class="ac-container"></div>
     </div>
-    <!-- /Footer Bottom -->
-  </footer>
 </template>
 
 <style lang="scss" scoped>
 @use '../style/general.scss';
 @use '../style/partials/mixin' as *;
 @use '../style/partials/variables' as *;
-
-footer{
   .mid-line{
     height: 20px;
     background-color: $cc-lima;
@@ -37,10 +22,4 @@ footer{
   .footer-top{
     height: 300px;
   }
-  .footer-bottom{
-    height: 200px;
-    background-color: $cc-lima;
-  }
-}
-
 </style>
