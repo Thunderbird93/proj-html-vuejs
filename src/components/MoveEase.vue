@@ -13,8 +13,8 @@ export default {
         <div class="ac-container">
           <div class="cta-card">
             <div class="card text-center" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
+              <div class="card-body carta">
+                <h5 class="card-title">Move With Ease</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 <Cta_Btn />
               </div>
@@ -33,5 +33,16 @@ export default {
     background-image: url(../assets/img/avada-movers-servicetwophoto-final.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    .cta-card{
+      display: flex;
+      justify-content: flex-end;
+      .carta{
+        color: $cc-white;
+        background-color: $cc-lima;
+        border: 5px solid $mc-hippie-green;
+      }
+    }
   }
 </style>
