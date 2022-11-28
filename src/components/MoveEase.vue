@@ -41,19 +41,19 @@ export default {
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
-    .cta-card{
-      display: flex;
-      justify-content: flex-end;
-      .carta{
-        color: $cc-white;
-        background-color: $cc-lima;
-        border: 5px solid $mc-hippie-green;
-        .temp{
-        display: flex;
-        justify-content: center;
+
+        .cta-card{
+          display: flex;
+          justify-content: flex-end;
+          .carta{
+            color: $cc-white;
+            background-color: $cc-lima;
+            border: 5px solid $mc-hippie-green;
+            .temp{
+            display: flex;
+            justify-content: center;
+            }
+          }
         }
-      }
-    }
-  }
+}
 </style>
