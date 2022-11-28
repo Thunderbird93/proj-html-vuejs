@@ -13,10 +13,10 @@ export default {
 <template>
   <div class="main-jumbotorn">
         <div class="ac-container">
-          <div class="jumbotron">
-            <h6>HEADACHE FREE</h6>
-            <h2 class="display-4">Award Winning</h2>
-            <h2 class="display-4">Moving Company</h2>
+          <div class="jumbotronn">
+            <p>HEADACHE FREE</p>
+            <h2>Award Winning</h2>
+            <h2>Moving Company</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur quia quas veritatis ullam illum voluptatem ad eligendi repellendus facilis sunt quisquam at, error reprehenderit iusto accusamus atque non alias illo, dolores laboriosam consequatur?</p>
             <Cta_Btn />
           </div>
@@ -31,5 +31,17 @@ export default {
     .main-jumbotorn{
     background-color: $mc-mercury;
     height: 335px;
+    .ac-container{
+      @include center;
+      .jumbotronn{
+        text-align: center;
+        font-size: 8px;
+        width: 50%;
+        margin: 0 auto;
+        h2{
+          font-size: 16px;
+        }
+      }
+    }  
   }
 </style>
