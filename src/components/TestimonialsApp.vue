@@ -44,8 +44,10 @@ export default {
                     {{testimonianza.voce}}
                   </p>
                 </div>
-              </div>
-              <Cta_Btn v-html="call" />
+               </div>
+               <div class="temp">
+                <Cta_Btn v-html="call" />
+               </div>
             </div>
           </div>  
         </div>
@@ -67,6 +69,10 @@ export default {
     height: 100%;
     .ac-container{
       height: 100%;
+      .temp{
+        display: flex;
+        justify-content: center;
+        }
     }
   }
 }

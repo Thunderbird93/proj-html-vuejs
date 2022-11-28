@@ -23,7 +23,9 @@ export default {
             <h2>Award Winning</h2>
             <h2>Moving Company</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur quia quas veritatis ullam illum voluptatem ad eligendi repellendus facilis sunt quisquam at, error reprehenderit iusto accusamus atque non alias illo, dolores laboriosam consequatur?</p>
-            <Cta_Btn v-html="call" />
+            <div class="temp">
+              <Cta_Btn v-html="call" />
+            </div>
           </div>
         </div>  
       </div>
@@ -43,6 +45,10 @@ export default {
         font-size: 8px;
         width: 50%;
         margin: 0 auto;
+        .temp{
+        display: flex;
+        justify-content: center;
+        }
         h2{
           font-size: 16px;
           color: $cc-lima;

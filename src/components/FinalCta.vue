@@ -19,7 +19,9 @@ export default {
     <div class="ac-container">
       <h2>Request A Free Quote</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatibus ipsum est adipisci sapiente possimus pariatur aperiam iure ducimus quisquam nam quidem, reprehenderit iste nobis dolore maiores voluptas ullam sit.</p>
-      <Cta_Btn v-html="call" />
+            <div class="temp">
+              <Cta_Btn v-html="call" />
+            </div>
     </div>
   </div>
 </template>
@@ -36,6 +38,10 @@ main{
     height: 268px;
     text-align: center;
     @include center;
+    .temp{
+        display: flex;
+        justify-content: center;
+        }
   }
 }
 </style>

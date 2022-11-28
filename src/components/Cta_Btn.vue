@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <span></span>
+    <span></span>
 </template>
 
 <style lang="scss" scoped>

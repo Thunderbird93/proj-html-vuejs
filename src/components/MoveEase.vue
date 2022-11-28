@@ -21,7 +21,9 @@ export default {
               <div class="card-body carta">
                 <h5 class="card-title">Move With Ease</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <Cta_Btn v-html="call" />
+                <div class="temp">
+                 <Cta_Btn v-html="call" />
+                </div>
               </div>
             </div>
           </div>
@@ -47,6 +49,10 @@ export default {
         color: $cc-white;
         background-color: $cc-lima;
         border: 5px solid $mc-hippie-green;
+        .temp{
+        display: flex;
+        justify-content: center;
+        }
       }
     }
   }
