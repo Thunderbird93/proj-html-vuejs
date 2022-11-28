@@ -16,7 +16,7 @@
 }
 
 @mixin cta_btn {
-    min-width: 50px;
+    width: max-content;
     padding: 7px 20px;
     background-color: $md-denim;
     color: $cc-white;
