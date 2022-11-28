@@ -2,6 +2,8 @@
 import MenuApp from './MenuApp.vue'
 import Cta_Btn from './Cta_Btn.vue'
 import pagine from '../data/menu'
+import immagini from '../data/logo'
+
 export default {
     name: 'JumbotronApp',
     props:{
@@ -14,6 +16,7 @@ export default {
         return{
             pagine,
             call: 'FREE SHOW',
+            immagini
         }
     }
 }
@@ -26,8 +29,8 @@ export default {
             <!-- Top Jumbotron -->
             <div class="j-top">
                 <div class="logo">
-                    <a href="#">
-                        <img src="../assets/img/avada-movers-retinalogo.png" alt="logo">
+                    <a v-for="(immagine, index) in immagini" :key="index" href="#">
+                        <img :src="immagine.path" :alt="immagine.nome">
                     </a>
                 </div>
                 <navbar>

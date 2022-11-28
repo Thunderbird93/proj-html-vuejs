@@ -5,6 +5,11 @@ export default {
     name: 'FinalCta',
     components:{
       Cta_Btn,
+    },
+    data(){
+      return{
+        call: 'CLICK HERE'
+      }
     }
 }
 </script>
@@ -14,7 +19,7 @@ export default {
     <div class="ac-container">
       <h2>Request A Free Quote</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatibus ipsum est adipisci sapiente possimus pariatur aperiam iure ducimus quisquam nam quidem, reprehenderit iste nobis dolore maiores voluptas ullam sit.</p>
-      <Cta_Btn />
+      <Cta_Btn v-html="call" />
     </div>
   </div>
 </template>

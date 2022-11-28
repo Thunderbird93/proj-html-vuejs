@@ -5,6 +5,11 @@ export default {
     name: 'TestimonialsApp',
     components:{
       Cta_Btn,
+    },
+    data(){
+      return{
+        call: 'READ MORE TESTIMONIALS',
+      }
     }
 }
 </script>
@@ -64,7 +69,7 @@ export default {
                   </p>
                 </div>
               </div>
-              <Cta_Btn />
+              <Cta_Btn v-html="call" />
             </div>
           </div>  
         </div>

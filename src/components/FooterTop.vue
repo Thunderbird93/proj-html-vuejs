@@ -3,6 +3,7 @@ import MenuApp from './MenuApp.vue'
 import PostsApp from './PostsApp.vue'
 import pagine from '../data/menu'
 import posts from '../data/posts'
+import immagini from '../data/logo'
 export default {
     name: 'FooterTop',
     components:{
@@ -15,7 +16,8 @@ export default {
     data(){
       return{
         pagine,
-        posts
+        posts,
+        immagini
       }
     }
 }
@@ -29,7 +31,9 @@ export default {
           <h6>ABOUT</h6>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolores aspernatur maiores accusamus eaque amet possimus odit vel quaerat magni? Facere esse eum consectetur quo inventore repellendus! Rerum, ipsa non?</p>
           <div class="logo">
-            <img src="../assets/img/avada-movers-retinalogo.png" alt="">
+            <a v-for="(immagine, index) in immagini" :key="index" href="#">
+              <img :src="immagine.path" :alt="immagine.nome">
+            </a>
           </div>
         </div>
         <div class="movers">

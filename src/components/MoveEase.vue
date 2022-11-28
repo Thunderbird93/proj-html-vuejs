@@ -4,6 +4,11 @@ export default {
     name: 'MoveEase',
     components:{
       Cta_Btn,
+    },
+    data(){
+      return{
+        call: 'GET A FREE QUOTE NOW',
+      }
     }
 }
 </script>
@@ -16,7 +21,7 @@ export default {
               <div class="card-body carta">
                 <h5 class="card-title">Move With Ease</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <Cta_Btn />
+                <Cta_Btn v-html="call" />
               </div>
             </div>
           </div>
