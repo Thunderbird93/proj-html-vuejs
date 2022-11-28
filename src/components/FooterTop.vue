@@ -56,11 +56,15 @@ export default {
     height: 225px;
     .ac-container{
       display: flex;
-      .about{
-        width: 30%;
-        .logo{
-        }
-      }
+          .about{
+            width: 30%;
+            margin-right: 100px;
+            .logo{
+            }
+          }
+          .movers{
+            margin-right: 100px;
+          }
     }  
   }
 </style>

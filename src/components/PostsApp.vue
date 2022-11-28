@@ -23,6 +23,7 @@ li{
      a{
         color: black;
         font-weight: bolder;
+        font-size: 8px;
     }
 }
 </style>
