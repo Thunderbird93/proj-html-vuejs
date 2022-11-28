@@ -5,6 +5,11 @@ export default {
     name: 'MiddleJumbotron',
     components:{
       Cta_Btn,
+    },
+    data(){
+      return{
+        call: 'READ OUR TESTIMONIALS',
+      }
     }
 
 }
@@ -18,7 +23,7 @@ export default {
             <h2>Award Winning</h2>
             <h2>Moving Company</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur quia quas veritatis ullam illum voluptatem ad eligendi repellendus facilis sunt quisquam at, error reprehenderit iusto accusamus atque non alias illo, dolores laboriosam consequatur?</p>
-            <Cta_Btn />
+            <Cta_Btn v-html="call" />
           </div>
         </div>  
       </div>

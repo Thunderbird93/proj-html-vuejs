@@ -24,8 +24,10 @@ export default {
     span{
       display: flex;
       color: $cc-white;
+      font-size: 10px;
       h5{
         margin-left: 5px;
+        font-size: 10px;
       }
     }
   }

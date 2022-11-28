@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <span>FREE QUOTE</span>
+  <span></span>
 </template>
 
 <style lang="scss" scoped>

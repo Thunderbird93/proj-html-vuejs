@@ -2,7 +2,6 @@
 import MenuApp from './MenuApp.vue'
 import Cta_Btn from './Cta_Btn.vue'
 import pagine from '../data/menu'
-
 export default {
     name: 'JumbotronApp',
     props:{
@@ -13,7 +12,8 @@ export default {
     },
     data(){
         return{
-            pagine
+            pagine,
+            call: 'FREE SHOW',
         }
     }
 }
@@ -33,7 +33,7 @@ export default {
                 <navbar>
                     <ul>
                         <MenuApp :menu="pagine" />
-                        <Cta_Btn />
+                        <Cta_Btn v-html="call" />
                     </ul>
                 </navbar>
             </div>
@@ -98,5 +98,4 @@ export default {
         }
     }
 }
-
 </style>

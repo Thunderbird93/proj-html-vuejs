@@ -5,6 +5,11 @@ export default {
     name: 'TreCarteApp',
     components:{
       Cta_Btn,
+    },
+    data(){
+      return{
+        call: 'READ MORE',
+      }
     }
 }
 </script>
@@ -25,7 +30,7 @@ export default {
                     <div class="card-body">
                       <h5 class="card-title">Two Man Teams</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <Cta_Btn />
+                      <Cta_Btn v-html="call" />
                     </div>
                   </div>
                 </div>
@@ -36,7 +41,7 @@ export default {
                     <div class="card-body">
                       <h5 class="card-title">We Do All The Lifting</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <Cta_Btn />
+                      <Cta_Btn v-html="call" />
                     </div>
                   </div>
                 </div>
@@ -47,7 +52,7 @@ export default {
                     <div class="card-body">
                       <h5 class="card-title">Coast To Coast</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <Cta_Btn />
+                      <Cta_Btn v-html="call" />
                     </div>
                   </div>
                 </div>
