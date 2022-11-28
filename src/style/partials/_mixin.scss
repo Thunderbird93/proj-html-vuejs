@@ -6,6 +6,11 @@
     align-items: center;
 }
 
+@mixin center_div {
+    @include center();
+    height: 100%;
+}
+
 @mixin debug {
     border: 1px dotted red;
 }
