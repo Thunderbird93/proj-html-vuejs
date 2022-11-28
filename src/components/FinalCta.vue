@@ -1,13 +1,18 @@
 <script>
+import Cta_Btn from './Cta_Btn.vue'
+
 export default {
     name: 'FinalCta',
+    components:{
+      Cta_Btn,
+    }
 }
 </script>
 
 <template>
     <div class="final-cta">
     <div class="ac-container">
-      
+      <Cta_Btn />
     </div>
   </div>
 </template>

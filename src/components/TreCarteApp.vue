@@ -1,6 +1,11 @@
 <script>
+import Cta_Btn from './Cta_Btn.vue'
+
 export default {
     name: 'TreCarteApp',
+    components:{
+      Cta_Btn,
+    }
 }
 </script>
 
@@ -14,7 +19,7 @@ export default {
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <Cta_Btn />
               </div>
             </div>
           </div>
@@ -25,7 +30,7 @@ export default {
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <Cta_Btn />
               </div>
             </div>
           </div>
@@ -36,7 +41,7 @@ export default {
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <Cta_Btn />
               </div>
             </div>
           </div>

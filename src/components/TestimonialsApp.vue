@@ -1,6 +1,11 @@
 <script>
+import Cta_Btn from './Cta_Btn.vue'
+
 export default {
     name: 'TestimonialsApp',
+    components:{
+      Cta_Btn,
+    }
 }
 </script>
 
@@ -58,6 +63,7 @@ export default {
                 </p>
               </div>
             </div>
+            <Cta_Btn />
           </section>
         </div>
       </div>

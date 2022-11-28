@@ -20,7 +20,6 @@ export default {
 .cta{
     background-color: $md-denim;
     @include center;
-    //debug
     height: 71px;
     span{
       display: flex;
