@@ -40,6 +40,8 @@ export default {
         margin: 0 auto;
         h2{
           font-size: 16px;
+          color: $cc-lima;
+          font-weight: bolder;
         }
       }
     }  

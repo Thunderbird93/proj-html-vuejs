@@ -1,13 +1,38 @@
 <script>
+import MenuApp from './MenuApp.vue'
+import pagine from '../data/menu'
 export default {
     name: 'FooterTop',
+    components:{
+      MenuApp,
+    },
+    data(){
+      return{
+        pagine
+      }
+    }
 }
 </script>
 
 <template>
     <div class="mid-line"></div>
     <div class="footer-top">
-      <div class="ac-container"></div>
+      <div class="ac-container">
+        <div class="about">
+          <h6>ABOUT</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolores aspernatur maiores accusamus eaque amet possimus odit vel quaerat magni? Facere esse eum consectetur quo inventore repellendus! Rerum, ipsa non?</p>
+          <div class="logo">
+            <img src="../assets/img/avada-movers-retinalogo.png" alt="">
+          </div>
+        </div>
+        <div class="movers">
+          <h6>Movers</h6>
+          <MenuApp :menu="pagine" />
+        </div>
+        <div class="posts">
+          <h6>RECENT POSTS</h6>
+        </div>
+      </div>
     </div>
 </template>
 
@@ -21,5 +46,13 @@ export default {
   }
   .footer-top{
     height: 225px;
+    .ac-container{
+      display: flex;
+      .about{
+        width: 30%;
+        .logo{
+        }
+      }
+    }  
   }
 </style>

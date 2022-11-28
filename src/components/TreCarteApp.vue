@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <div class="ac-container">
+  <div class="ac-container-nh">
     <div class="tocenter">
             <div>
               <div class="testo">
@@ -62,32 +62,35 @@ export default {
 @use '../style/partials/mixin' as *;
 @use '../style/partials/variables' as *;
 
-.ac-container{
+.ac-container-nh{
   height: 548px;
   .tocenter{
     @include center;
     height: 100%;
     margin-top: 0px;
-      .testo{
-        text-align: center;
-      }
-      .carta{
-        border: 10px solid $mc-mercury;
-        height: 100%;
-        border-radius: 0;
-        display: flex;
-        margin: 0 15px;
-        h5{
-          font-size: 16px;
-          text-align: center;
-          font-weight: bolder;
-          color: $cc-denim;
+    .tre-carte{
+      height: 340px;
+          .testo{
+            text-align: center;
+          }
+          .carta{
+            border: 10px solid $mc-mercury;
+            height: 100%;
+            border-radius: 0;
+            display: flex;
+            margin: 0 15px;
+            h5{
+              font-size: 16px;
+              text-align: center;
+              font-weight: bolder;
+              color: $cc-denim;
+            }
+            img{
+              border-radius: 0;
+              border-bottom: 10px solid $mc-mercury;
+            }
         }
-        img{
-          border-radius: 0;
-          border-bottom: 10px solid $mc-mercury;
-        }
-    }
+      }   
   }  
 }
 

@@ -19,12 +19,15 @@ export default {
 <template>
     <div class="footer-bottom">
       <div class="ac-container">
+        <!--About-->
+        <div class="about"></div>
+        <!--Copyright-->
         <div class="copyright">
-          <div>&copy Copyright 2012 - 2020</div>
-          <div>|</div>
-          <div>Avada Theme by ThemeFusion</div>
-          <div>|</div>
-          <div>Powered by WordPress</div>
+          <p>&copy Copyright 2012 - 2020</p>
+          <p>|</p>
+          <p>Avada Theme by ThemeFusion</p>
+          <p>|</p>
+          <p>Powered by WordPress</p>
         </div>
         <SocialApp :social="icons"/>
       </div>

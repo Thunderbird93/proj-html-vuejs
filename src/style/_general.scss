@@ -22,6 +22,15 @@ body {
     width: calc(100% / 27 * 17);
     margin: 0 auto;
     padding: 0;
+    height: 100%;
+    //debug
+    @include debug;
+}
+
+.ac-container-nh{
+    width: calc(100% / 27 * 17);
+    margin: 0 auto;
+    padding: 0;
     //debug
     @include debug;
 }
@@ -37,4 +46,8 @@ a {
 
 img{
     width: 100%;
+}
+
+p{
+    font-size: 10px;
 }
