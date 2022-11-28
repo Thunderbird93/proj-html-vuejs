@@ -14,8 +14,9 @@ export default {
 @use '../style/partials/variables' as *;
 
 span{
-    @include cta_btn;
-    @include center;
+  @include center;
+  @include cta_btn;
+  
 }
 
 </style>

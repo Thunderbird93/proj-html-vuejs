@@ -37,20 +37,17 @@ export default {
                     </ul>
                 </navbar>
             </div>
-            <!-- /Top Jumbotron -->
 
             <!-- Bottom Jumbotron -->
-            <div class="j-bottom">
-              <div>
-                <h6>MOVING WITHOUT THE HASSLE</h6>
-                <h2>WE MAKE T SIMPLE</h2>
-                <h6>PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</h6>
-              </div>
+            <div class="tocenter">
+                <div class="bottom">
+                    <p>MOVING WITHOUT THE HASSLE</p>
+                    <h2>WE MAKE IT SIMPLE</h2>
+                    <p>PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</p>
+                </div>
             </div>
-            <!-- /Bottom Jumbotron -->
         </div>
     </div>
-    <!-- /Jumbotron -->
 </template>
 
 <style lang="scss" scoped>
@@ -70,10 +67,6 @@ export default {
         .navbar{
             display: flex;
         }
-        .j-bottom{
-            @include center;
-            @include debug;
-        }
         .logo{
             height: 100%;
                 a{
@@ -86,6 +79,22 @@ export default {
         ul{
             @include center;
             font-weight: 900;
+        }
+    }
+    .tocenter{
+        @include center_div;
+        .bottom{
+            text-align: center;
+            p{
+                margin-bottom: 0;
+                margin-top: 0;
+                font-size: 8px;
+                font-weight: bolder;
+                color: $mc-oslo-gray;
+            }
+            h2{
+                font-weight: bolder;
+            }
         }
     }
 }
