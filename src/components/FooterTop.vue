@@ -1,14 +1,21 @@
 <script>
 import MenuApp from './MenuApp.vue'
+import PostsApp from './PostsApp.vue'
 import pagine from '../data/menu'
+import posts from '../data/posts'
 export default {
     name: 'FooterTop',
     components:{
       MenuApp,
+      PostsApp,
+    },
+    props:{
+      posts: Object
     },
     data(){
       return{
-        pagine
+        pagine,
+        posts
       }
     }
 }
@@ -31,6 +38,7 @@ export default {
         </div>
         <div class="posts">
           <h6>RECENT POSTS</h6>
+          <PostsApp :posts="posts" />
         </div>
       </div>
     </div>
