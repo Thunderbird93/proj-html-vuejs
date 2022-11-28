@@ -69,6 +69,10 @@ export default {
     height: 100%;
     .ac-container{
       height: 100%;
+      img{
+        width: 100px;
+        height: 100px;
+      }
       .temp{
         display: flex;
         justify-content: center;
