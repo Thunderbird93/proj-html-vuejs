@@ -19,6 +19,13 @@ export default {
 <template>
     <div class="footer-bottom">
       <div class="ac-container">
+        <div class="copyright">
+          <div>&copy Copyright 2012 - 2020</div>
+          <div>|</div>
+          <div>Avada Theme by ThemeFusion</div>
+          <div>|</div>
+          <div>Powered by WordPress</div>
+        </div>
         <SocialApp :social="icons"/>
       </div>
     </div>
@@ -31,5 +38,13 @@ export default {
 .footer-bottom{
     height: 72px;
     background-color: $cc-lima;
+    color: $cc-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .copyright{
+      display: flex;
+      justify-content: center;
+    }
   }
 </style>

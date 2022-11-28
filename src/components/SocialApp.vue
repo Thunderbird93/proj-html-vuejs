@@ -38,5 +38,7 @@ export default {
         } li {
             margin: 0 5px;
         }
+        display: flex;
+        justify-content: center;
     }
 </style>
