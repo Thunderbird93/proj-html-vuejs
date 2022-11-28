@@ -37,11 +37,12 @@ main{
     background-image: url(../assets/img/avada-movers-request-quote-background.jpg);
     height: 268px;
     text-align: center;
-    @include center;
-    .temp{
-        display: flex;
-        justify-content: center;
-        }
+    .ac-container{
+      .temp{
+          display: flex;
+          justify-content: center;
+          }
+    }
   }
 }
 </style>
